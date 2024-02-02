@@ -1,0 +1,148 @@
+#root {
+    text-align: center;
+}
+
+header {
+    display: flex;
+}
+
+.main-container {
+    flex-direction: row;
+}
+
+@media all and (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .station-list-container, .map-container {
+        width: 100% !important;
+    }
+}
+
+.station-list-container, .map-container {
+    width: 30%;
+}
+
+.station-list-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mapboxgl-control-container {
+    display: none;
+}
+
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+@keyframes shake-animation {
+    0%, to {
+        transform: translateX(0)
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateX(-2px)
+    }
+
+    10%, 90% {
+        transform: translateX(1px)
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(2px)
+    }
+}
+
+@keyframes wrong-guess-animation {
+    0% {
+        outline-color: #a30000;
+    }
+    100% {
+        outline-color: transparent;
+    }
+}
+
+@keyframes good-guess-animation {
+    0% {
+        outline-color: forestgreen;
+    }
+    100% {
+        outline-color: transparent;
+    }
+}
+
+@keyframes station-list-animation {
+    0% {
+        background-color: forestgreen;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes already-found-animation {
+    0%, 50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.wrong-guess {
+    outline: solid 4px #a30000;
+    border: transparent;
+    animation: wrong-guess-animation .8s forwards,
+    shake-animation .5s forwards;
+}
+
+.good-guess {
+    outline: solid 4px forestgreen;
+    border: transparent;
+    animation: good-guess-animation .8s forwards;
+}
+
+.station-list-lines img {
+    height: 30px;
+}
+
+.li-station {
+    animation: station-list-animation 1.5s none;
+    transition: all 0.25s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: forestgreen;
+    }
+}
+
+.already-found {
+    opacity: 0;
+    animation: already-found-animation 2.5s forwards;
+}
+
+.progress-ring__circle {
+    stroke-dasharray: 400, 400;
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+#victory-modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100vw;
+}

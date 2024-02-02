@@ -1,0 +1,974 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debourg",
+        "shortname": "Debourg",
+        "line": "B",
+        "order": 7,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.833464,
+          45.731081
+        ],
+        "type": "Point"
+      },
+      "id": 5365142247
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5365143994,
+        "name": "Place Jean Jaurès",
+        "shortname": "Jean Jaurès",
+        "line": "B",
+        "order": 6,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.837348,
+          45.737599
+        ],
+        "type": "Point"
+      },
+      "id": 5365143994
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gare d'Oullins",
+        "shortname": "Gare d'Oullins",
+        "line": "B",
+        "order": 9,
+        "@id": 5365146848,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.815221,
+          45.716760
+        ],
+        "type": "Point"
+      },
+      "id": 5365146848
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oullins Centre",
+        "shortname": "Oullins Centre",
+        "line": "B",
+        "order": 10,
+        "@id": 5365146849,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.805038,
+          45.714246
+        ],
+        "type": "Point"
+      },
+      "id": 5365146849
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Genis-Laval Hôp. Sud",
+        "shortname": "Saint-Genis-Laval",
+        "line": "B",
+        "order": 11,
+        "@id": 5365146850,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.805164,
+          45.700399
+        ],
+        "type": "Point"
+      },
+      "id": 5365146850
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellecour (Ligne A)",
+        "shortname": "Bellecour",
+        "line": "A",
+        "order": 2,
+        "@id": 5365148732,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.833717,
+          45.757773
+        ],
+        "type": "Point"
+      },
+      "id": 5365148732
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellecour (Ligne D)",
+        "shortname": "Bellecour",
+        "line": "D",
+        "order": 4,
+        "@id": 5365148733,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.832932,
+          45.757520
+        ],
+        "type": "Point"
+      },
+      "id": 5365148733
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vieux Lyon - Cathédrale Saint-Jean (Funiculaire)",
+        "shortname": "Vieux Lyon",
+        "line": "F1",
+        "order": 0,
+        "@id": 5365152101,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.826015,
+          45.760016
+        ],
+        "type": "Point"
+      },
+      "id": 5365152101
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vieux Lyon - Cathédrale Saint-Jean (Funiculaire)",
+        "shortname": "Vieux Lyon",
+        "line": "F2",
+        "order": 0,
+        "@id": 5365152108,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.826015,
+          45.760016
+        ],
+        "type": "Point"
+      },
+      "id": 5365152108
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vieux Lyon - Cathédrale Saint-Jean (Métro)",
+        "shortname": "Vieux Lyon",
+        "line": "D",
+        "order": 3,
+        "@id": 5365152102,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.826508,
+          45.760228
+        ],
+        "type": "Point"
+      },
+      "id": 5365152102
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5365154886,
+        "name": "Vaulx-en-Velin - La Soie",
+        "line": "A",
+        "order": 13,
+        "shortname": "Vaulx-en-Velin",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.921096,
+          45.760958
+        ],
+        "type": "Point"
+      },
+      "id": 5365154886
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Ville - Louis Pradel (Ligne A)",
+        "line": "A",
+        "order": 4,
+        "shortname": "Hôtel de Ville",
+        "@id": 5365157959,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.836152,
+          45.767785
+        ],
+        "type": "Point"
+      },
+      "id": 5365157959
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Ville - Louis Pradel (Ligne C)",
+        "line": "C",
+        "order": 0,
+        "shortname": "Hôtel de Ville",
+        "@id": 5365157960,
+        "color": "#F99D1C"
+      },
+      "geometry": {
+        "coordinates": [
+          4.836064,
+          45.767985
+        ],
+        "type": "Point"
+      },
+      "id": 5365157960
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charpennes - Charles Hernu (Ligne B)",
+        "shortname": "Charpennes",
+        "line": "B",
+        "order": 0,
+        "@id": 5365164472,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.863175,
+          45.770441
+        ],
+        "type": "Point"
+      },
+      "id": 5365164472
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stade de Gerland—Le LOU",
+        "shortname": "Stade de Gerland",
+        "line": "B",
+        "order": 8,
+        "@id": 5365165135,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.830873,
+          45.726727
+        ],
+        "type": "Point"
+      },
+      "id": 5365165135
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5365180176,
+        "name": "Gorge de Loup",
+        "line": "D",
+        "order": 2,
+        "shortname": "Gorge de Loup",
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.805491,
+          45.766372
+        ],
+        "type": "Point"
+      },
+      "id": 5365180176
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monplaisir - Lumière",
+        "shortname": "Monplaisir",
+        "line": "D",
+        "order": 9,
+        "@id": 5365180454,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.871484,
+          45.745595
+        ],
+        "type": "Point"
+      },
+      "id": 5365180454
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Masséna",
+        "shortname": "Masséna",
+        "line": "A",
+        "order": 6,
+        "@id": 5365589507,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.853307,
+          45.769573
+        ],
+        "type": "Point"
+      },
+      "id": 5365589507
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valmy",
+        "shortname": "Valmy",
+        "line": "D",
+        "order": 1,
+        "@id": 5380086325,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.805363,
+          45.774664
+        ],
+        "type": "Point"
+      },
+      "id": 5380086325
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5380090834,
+        "name": "Guillotière",
+        "shortname": "Guillotière",
+        "line": "D",
+        "order": 5,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.842833,
+          45.755465
+        ],
+        "type": "Point"
+      },
+      "id": 5380090834
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5380092139,
+        "name": "Saxe - Gambetta (Ligne D)",
+        "line": "D",
+        "order": 6,
+        "shortname": "Saxe - Gambetta",
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.846967,
+          45.754039
+        ],
+        "type": "Point"
+      },
+      "id": 5380092139
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5380092140,
+        "name": "Saxe - Gambetta (Ligne B)",
+        "line": "B",
+        "order": 4,
+        "shortname": "Saxe - Gambetta",
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.847003,
+          45.753865
+        ],
+        "type": "Point"
+      },
+      "id": 5380092140
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385006337,
+        "name": "Perrache",
+        "shortname": "Perrache",
+        "line": "A",
+        "order": 0,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.826877,
+          45.749607
+        ],
+        "type": "Point"
+      },
+      "id": 5385006337
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385022793,
+        "name": "Laennec",
+        "shortname": "Laennec",
+        "line": "D",
+        "order": 11,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.886650,
+          45.738454
+        ],
+        "type": "Point"
+      },
+      "id": 5385022793
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gare de Vaise",
+        "shortname": "Gare de Vaise",
+        "line": "D",
+        "order": 0,
+        "@id": 5385023672,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.804444,
+          45.780691
+        ],
+        "type": "Point"
+      },
+      "id": 5385023672
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garibaldi",
+        "shortname": "Garibaldi",
+        "line": "D",
+        "order": 7,
+        "@id": 5385025147,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.853483,
+          45.751799
+        ],
+        "type": "Point"
+      },
+      "id": 5385025147
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grange Blanche",
+        "shortname": "Grange Blanche",
+        "line": "D",
+        "order": 10,
+        "@id": 5385025382,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.878872,
+          45.743001
+        ],
+        "type": "Point"
+      },
+      "id": 5385025382
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sans Souci",
+        "shortname": "Sans Souci",
+        "line": "D",
+        "order": 8,
+        "@id": 5385025439,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.865237,
+          45.747745
+        ],
+        "type": "Point"
+      },
+      "id": 5385025439
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385026358,
+        "name": "Mermoz - Pinel",
+        "shortname": "Mermoz - Pinel",
+        "line": "D",
+        "order": 12,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.887348,
+          45.730609
+        ],
+        "type": "Point"
+      },
+      "id": 5385026358
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385027363,
+        "name": "Parilly",
+        "shortname": "Parilly",
+        "line": "D",
+        "order": 13,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.887561,
+          45.719516
+        ],
+        "type": "Point"
+      },
+      "id": 5385027363
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385029707,
+        "name": "Brotteaux",
+        "shortname": "Brotteaux",
+        "line": "B",
+        "order": 1,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.859331,
+          45.767153
+        ],
+        "type": "Point"
+      },
+      "id": 5385029707
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385032105,
+        "name": "Gare Part-Dieu - Vivier Merle",
+        "shortname": "Gare Part-Dieu",
+        "line": "B",
+        "order": 2,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.857224,
+          45.761584
+        ],
+        "type": "Point"
+      },
+      "id": 5385032105
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385036748,
+        "name": "Ampère - Victor Hugo",
+        "shortname": "Ampère - Victor Hugo",
+        "line": "A",
+        "order": 1,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.829203,
+          45.752957
+        ],
+        "type": "Point"
+      },
+      "id": 5385036748
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foch",
+        "shortname": "Foch",
+        "line": "A",
+        "order": 5,
+        "@id": 5385037483,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.844308,
+          45.768741
+        ],
+        "type": "Point"
+      },
+      "id": 5385037483
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385037619,
+        "name": "République - Villeurbanne",
+        "line": "A",
+        "order": 8,
+        "shortname": "République",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.874024,
+          45.770567
+        ],
+        "type": "Point"
+      },
+      "id": 5385037619
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385037695,
+        "name": "Gratte-Ciel",
+        "order": 9,
+        "shortname": "Gratte-Ciel",
+        "line": "A",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.882196,
+          45.769059
+        ],
+        "type": "Point"
+      },
+      "id": 5385037695
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385037696,
+        "line": "A",
+        "name": "Flachet - Alain Gilles",
+        "order": 10,
+        "shortname": "Flachet",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.889366,
+          45.767743
+        ],
+        "type": "Point"
+      },
+      "id": 5385037696
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385037838,
+        "line": "A",
+        "order": 11,
+        "name": "Cusset",
+        "shortname": "Cusset",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.900763,
+          45.765648
+        ],
+        "type": "Point"
+      },
+      "id": 5385037838
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5385038134,
+        "line": "A",
+        "order": 12,
+        "name": "Laurent Bonnevay - Astroballe",
+        "shortname": "Laurent Bonnevay",
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.908866,
+          45.764119
+        ],
+        "type": "Point"
+      },
+      "id": 5385038134
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line": "B",
+        "order": 5,
+        "name": "Jean Macé",
+        "shortname": "Jean Macé",
+        "@id": 5385052292,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.842319,
+          45.745933
+        ],
+        "type": "Point"
+      },
+      "id": 5385052292
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line": "C",
+        "order": 1,
+        "name": "Croix-Paquet",
+        "shortname": "Croix-Paquet",
+        "@id": 5387297446,
+        "color": "#F99D1C"
+      },
+      "geometry": {
+        "coordinates": [
+          4.836183,
+          45.771024
+        ],
+        "type": "Point"
+      },
+      "id": 5387297446
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5388249130,
+        "line": "C",
+        "order": 2,
+        "name": "Croix-Rousse",
+        "shortname": "Croix-Rousse",
+        "color": "#F99D1C"
+      },
+      "geometry": {
+        "coordinates": [
+          4.831813,
+          45.774476
+        ],
+        "type": "Point"
+      },
+      "id": 5388249130
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 5388270721,
+        "line": "C",
+        "order": 4,
+        "name": "Cuire",
+        "shortname": "Cuire",
+        "color": "#F99D1C"
+      },
+      "geometry": {
+        "coordinates": [
+          4.832604,
+          45.785318
+        ],
+        "type": "Point"
+      },
+      "id": 5388270721
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "uic_ref": "8772332",
+        "line": "D",
+        "order": 14,
+        "name": "Gare de Vénissieux",
+        "shortname": "Gare de Vénissieux",
+        "@id": 5390305237,
+        "color": "#00AB4E"
+      },
+      "geometry": {
+        "coordinates": [
+          4.888003,
+          45.705638
+        ],
+        "type": "Point"
+      },
+      "id": 5390305237
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line": "F1",
+        "order": 1,
+        "name": "Minimes - Théâtres romains",
+        "shortname": "Minimes",
+        "@id": 5509480923,
+        "color": "#8BC751"
+      },
+      "geometry": {
+        "coordinates": [
+          4.821336,
+          45.758628
+        ],
+        "type": "Point"
+      },
+      "id": 5509480923
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Just",
+        "shortname": "St-Just",
+        "line": "F1",
+        "order": 2,
+        "@id": 5821110979,
+        "color": "#8BC751"
+      },
+      "geometry": {
+        "coordinates": [
+          4.816558,
+          45.757212
+        ],
+        "type": "Point"
+      },
+      "id": 5821110979
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fourvière",
+        "shortname": "Fourvière",
+        "line": "F2",
+        "order": 1,
+        "@id": 5821110983,
+        "color": "#8BC751"
+      },
+      "geometry": {
+        "coordinates": [
+          4.821863,
+          45.762206
+        ],
+        "type": "Point"
+      },
+      "id": 5821110983
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charpennes - Charles Hernu (Ligne A)",
+        "line": "A",
+        "order": 7,
+        "shortname": "Charpennes",
+        "@id": 6022264659,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.863237,
+          45.770487
+        ],
+        "type": "Point"
+      },
+      "id": 6022264659
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cordeliers",
+        "shortname": "Cordeliers",
+        "line": "A",
+        "order": 3,
+        "@id": 8532840713,
+        "color": "#EE3D96"
+      },
+      "geometry": {
+        "coordinates": [
+          4.835882,
+          45.763392
+        ],
+        "type": "Point"
+      },
+      "id": 8532840713
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place Guichard - Bourse du Travail",
+        "shortname": "Place Guichard",
+        "line": "B",
+        "order": 3,
+        "@id": 9469971777,
+        "color": "#007DC5"
+      },
+      "geometry": {
+        "coordinates": [
+          4.847393,
+          45.759315
+        ],
+        "type": "Point"
+      },
+      "id": 9469971777
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 9469971778,
+        "name": "Hénon",
+        "order": 3,
+        "shortname": "Hénon",
+        "line": "C",
+        "color": "#F99D1C"
+      },
+      "geometry": {
+        "coordinates": [
+          4.827485,
+          45.779449
+        ],
+        "type": "Point"
+      },
+      "id": 9469971778
+    }
+  ],
+  "type": "FeatureCollection"
+}
