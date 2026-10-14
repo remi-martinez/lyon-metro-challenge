@@ -1,4 +1,4 @@
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 import React, { useRef, useState } from "react";
 import { Station } from "../types/Station.ts";
 import levenshtein from 'js-levenshtein';
@@ -89,7 +89,7 @@ function SearchBar() {
 
   const AlreadyFoundBadge = () => {
     return <span
-      className={`${alreadyFound ? 'already-found' : 'opacity-0'}  bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 float-left mb-2`}>
+      className={`${alreadyFound ? 'already-found' : 'opacity-0'}  bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-sm dark:bg-green-900 dark:text-green-300 float-left mb-2`}>
             Déjà trouvé
         </span>
   }

@@ -1,5 +1,5 @@
 import { Station } from "../types/Station.ts";
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 import { useEffect, useRef } from "react";
 
 function StationItem(props: { station: Station }) {

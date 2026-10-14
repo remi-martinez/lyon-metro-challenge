@@ -1,5 +1,5 @@
 import { ChangeEvent, useRef, useState } from "react";
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 import IconSettings from "./icons/IconSettings.tsx";
 import IconDownload from "./icons/IconDownload.tsx";
 import IconUpload from "./icons/IconUpload.tsx";
@@ -64,7 +64,7 @@ Inspiré du jeu memory.pour.paris créé par Benjamin TD (@_benjamintd) avec son
     return (
       <button onClick={() => setOpen(!open)} id="dropdownMenuIconHorizontalButton"
               data-dropdown-toggle="dropdownDotsHorizontal"
-              className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:outline-none dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+              className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:outline-hidden dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
               type="button">
         <IconSettings/>
       </button>
@@ -75,7 +75,7 @@ Inspiré du jeu memory.pour.paris créé par Benjamin TD (@_benjamintd) avec son
     const aClassNameStyles = "block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white";
     return (
       <div id="dropdownDotsHorizontal"
-           className={`${open ? '' : 'hidden'} absolute w-fit right-0 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600`}>
+           className={`${open ? '' : 'hidden'} absolute w-fit right-0 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600`}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="dropdownMenuIconHorizontalButton">
           <li>

@@ -1,6 +1,6 @@
 import Skeleton from "./Skeleton.tsx";
 import NoStationFound from "./NoStationFound.tsx";
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 import StationUL from "./StationUL.tsx";
 import PercentageBar from "./PercentageBar.tsx";
 

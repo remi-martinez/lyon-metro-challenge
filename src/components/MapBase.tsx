@@ -2,15 +2,26 @@ import { useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import geoJson from "../shared/stations.json";
 import { FeatureCollection } from "geojson";
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 import { Station } from "../types/Station.ts";
 
+if (!import.meta.env.VITE_MAPBOX_TOKEN) {
+  throw new Error('VITE_MAPBOX_TOKEN is not set. Copy .env.example to .env.local and add your Mapbox token.');
+}
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
+
+const featureCollection = geoJson as FeatureCollection;
+
+const flyToStation = (map: mapboxgl.Map, station: Station) => {
+  if (!station?.coordinates) return;
+
+  map.flyTo({
+    zoom: 13,
+    center: station.coordinates
+  })
+}
 
 function MapBase() {
-
-  mapboxgl.accessToken = 'pk.eyJ1IjoiaXBwbGUiLCJhIjoiY2xuNmJhcTlhMGtkNDJvcW1qYmFtMjZpOSJ9.3A79oLKQGkqfzSIZNaoP0w';
-
-  const featureCollection = geoJson as FeatureCollection;
 
   const {
     foundStations,
@@ -35,7 +46,7 @@ function MapBase() {
 
     setMap(map);
 
-    return map.on("load", () => {
+    map.on("load", () => {
       map.addSource(
         "lyon", {
           type: "geojson",
@@ -72,12 +83,12 @@ function MapBase() {
         }
       });
       updateMapLoaded(true);
-    }), () => {
+    });
+
+    return () => {
       map.remove()
     };
-
-
-  }, []);
+  }, [updateMapLoaded]);
 
   useEffect(() => {
     if (!map) return;
@@ -94,17 +105,7 @@ function MapBase() {
     if (clickedStation) {
       flyToStation(map, clickedStation);
     }
-  }, [foundStations, clickedStation]);
-
-
-  const flyToStation = (map: mapboxgl.Map, station: Station) => {
-    if (!station?.coordinates) return;
-
-    map.flyTo({
-      zoom: 13,
-      center: station.coordinates
-    })
-  }
+  }, [map, foundStations, clickedStation]);
 
   return (
     <div id="map" className="map-container relative flex justify-center h-full grow"/>

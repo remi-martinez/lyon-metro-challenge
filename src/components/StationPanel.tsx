@@ -2,7 +2,7 @@ import SearchBar from "./SearchBar.tsx";
 import Settings from "./Settings.tsx";
 import StationList from "./StationList.tsx";
 import RadialProgress from "./RadialProgress.tsx";
-import { usePlayerProgress } from "../providers/PlayerProgress.tsx";
+import { usePlayerProgress } from "../providers/PlayerProgressContext.ts";
 
 function StationPanel() {
 

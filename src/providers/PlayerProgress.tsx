@@ -1,31 +1,10 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Station } from "../types/Station.ts";
 import { useCookies } from 'react-cookie';
 import Utils from "../utils/utils.ts";
+import { PlayerProgressContext } from "./PlayerProgressContext.ts";
 
-type PlayerProgress = {
-  foundStations: Station[];
-  clickedStation?: Station;
-  mapLoaded: boolean;
-  percentGlobal: number;
-  percentForLine: (line: string) => number;
-  updateProgress: (station: Station) => void;
-  updateClickedStation: (station?: Station) => void;
-  updateMapLoaded: (state: boolean) => void;
-  resetProgress: () => void;
-};
-
-const PlayerProgressContext = createContext<PlayerProgress>({
-  foundStations: [],
-  clickedStation: undefined,
-  mapLoaded: false,
-  percentGlobal: 0,
-  percentForLine: (): number => 0,
-  updateProgress: (): void => { },
-  updateClickedStation: (): void => { },
-  updateMapLoaded: (): void => { },
-  resetProgress: (): void => { },
-});
+const COOKIE_OPTIONS = {path: '/', sameSite: 'strict', secure: window.location.protocol === 'https:'} as const;
 
 type PlayerProgressProviderProps = {
   children: React.ReactNode;
@@ -37,21 +16,23 @@ export const PlayerProgressProvider: React.FC<PlayerProgressProviderProps> = ({c
   const [mapLoaded, setMapLoaded] = useState<boolean>(false);
   const [percentGlobal, setPercentGlobal] = useState<number>(0);
   const [cookies, setCookie, removeCookie] = useCookies(['foundStationsIds']);
+  // Snapshot of the saved progress, so later cookie writes don't re-trigger the initial load
+  const [savedStationsIds] = useState<string[]>(() => cookies.foundStationsIds);
 
   /**
    * Load stations from cookie on map load
    */
   useEffect(() => {
-    const fetchedStations = mapLoaded ? Utils.fetchStationsFromIds(cookies.foundStationsIds) || [] : [];
+    const fetchedStations = mapLoaded ? Utils.fetchStationsFromIds(savedStationsIds) || [] : [];
     setFoundStations(fetchedStations);
-  }, [mapLoaded]);
+  }, [mapLoaded, savedStationsIds]);
 
   /**
    * Add foundStation to cookie
    */
   useEffect(() => {
     if (foundStations.length)
-      setCookie('foundStationsIds', foundStations.map(s => s.id), {path: '/'});
+      setCookie('foundStationsIds', foundStations.map(s => s.id), COOKIE_OPTIONS);
   }, [foundStations, setCookie]);
 
   /**
@@ -69,9 +50,9 @@ export const PlayerProgressProvider: React.FC<PlayerProgressProviderProps> = ({c
     setClickedStation(station);
   }
 
-  const updateMapLoaded = (state: boolean) => {
+  const updateMapLoaded = useCallback((state: boolean) => {
     setMapLoaded(state);
-  }
+  }, []);
 
   const percentForLine = (line: string) => {
     return Math.floor(100 * foundStations.filter(s => s.line === line).length
@@ -82,7 +63,7 @@ export const PlayerProgressProvider: React.FC<PlayerProgressProviderProps> = ({c
     setFoundStations([]);
     setClickedStation(undefined);
     window.location.reload();
-    removeCookie('foundStationsIds', {path: '/'});
+    removeCookie('foundStationsIds', COOKIE_OPTIONS);
   };
 
   return (
@@ -102,8 +83,3 @@ export const PlayerProgressProvider: React.FC<PlayerProgressProviderProps> = ({c
     </PlayerProgressContext.Provider>
   );
 };
-
-/**
- * Custom hook to access the player's progress
- */
-export const usePlayerProgress = () => useContext(PlayerProgressContext);
